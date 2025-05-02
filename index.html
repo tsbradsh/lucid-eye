@@ -15,14 +15,14 @@
         <!-- Social Sharing (Open Graph / Twitter Cards) -->
         <meta property="og:title" content="When You Sleep">
         <meta property="og:description" content="Official site for When You Sleep." />
-        <meta property="og:image" content="URL-to-your-cover-image.jpg">
+        <!-- <meta property="og:image" content=""> -->
         <meta property="og:type" content="website">
-        <meta property="og:url" content="https://yourdomain.com">
+        <!-- <meta property="og:url" content=""> -->
       
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:title" content="When You Sleep">
         <meta name="twitter:description" content="Official site for When You Sleep.">
-        <meta name="twitter:image" content="URL-to-your-cover-image.jpg">
+        <!-- <meta name="twitter:image" content=""> -->
       
         <!-- Title -->
         <title>When You Sleep | Official Site</title>
@@ -31,7 +31,10 @@
         <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
       
         <!-- Fonts -->
-      
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Tiny5&display=swap" rel="stylesheet">
+
         <!-- Stylesheet -->
         <link rel="stylesheet" href="styles.css">
       
@@ -42,15 +45,21 @@
       <body>
         <!-- Fixed Header -->
         <header class="navbar">
-          <a href="#">
-            <img src="assets/logo.png" alt="Band Logo" id="logo">
-          </a>
+            <a id="logo-link" href="#">
+              <img src="assets/logo.png" alt="Band Logo" id="logo">
+            </a>
         </header>
         <button class="hamburger" aria-label="Menu">
           <span class="bar"></span>
           <span class="bar"></span>
           <span class="bar"></span>
         </button>
+        <nav class="menu">
+          <a href="#">Home</a>
+          <a href="#events">Events</a>
+          <a href="https://whenyousleep.printful.me" target="_blank">Merch</a>
+          <a href="https://open.spotify.com/artist/2ra3R6gMee8fvVRdxFsKTw?si=CKIYUF0nTIKzYSU_XhuJKw" target="_blank">Music</a>
+        </nav>
 
         <!-- Video BG -->
         <section class="hero">
@@ -59,39 +68,136 @@
           </video>
           <div class="overlay-gradient"></div>
         </section>
-
-        <!-- About Section -->
-        <section class="about scroll-section fade-left">
-          <div class="content">
-            <h2>About the Band</h2>
-            <p>[Band imagery and descriptive text go here]</p>
-          </div>
-        </section>
-
+        
         <!-- Events Section -->
-        <section class="events scroll-section fade-right">
+        <section class="events scroll-section fade-right"> 
           <div class="content">
-            <h2>Upcoming Events</h2>
-            <p>[Event listings go here]</p>
+            <p id="events">EVENTS</p>       
+            
+            <script charset="utf-8" src="https://widgetv3.bandsintown.com/main.min.js"></script>
+            <a class="bit-widget-initializer"
+              data-artist-name="id_1481294"
+              
+              data-events-to-display=""
+              data-background-color="rgba(255,255,255,0)"
+              data-separator-color="rgba(221,221,221,1)"
+              data-text-color="rgba(255,255,255,1)"
+              data-font="Helvetica"
+              data-auto-style="true"
+              
+              data-button-label-capitalization="uppercase"
+              data-header-capitalization="uppercase"
+              data-location-capitalization="uppercase"
+              data-venue-capitalization="uppercase"
+              data-display-local-dates="true"
+              data-local-dates-position="tab"
+              data-display-past-dates="true"
+              data-display-details="false"
+              data-display-lineup="false"
+              data-display-start-time="false"
+              data-social-share-icon="false"
+              data-display-limit="all"
+              
+              data-date-format="MMM. D, YYYY"
+              data-date-orientation="horizontal"
+              data-date-border-color="#4A4A4A"
+              data-date-border-width="1px"
+              data-date-capitalization="capitalize"
+              data-date-border-radius="10px"
+              
+              data-event-ticket-cta-size="medium"
+              data-event-custom-ticket-text=""
+              data-event-ticket-text="TICKETS"
+              data-event-ticket-icon="false"
+              data-event-ticket-cta-text-color="rgba(255,255,255,1)"
+              data-event-ticket-cta-bg-color="rgba(74,74,74,1)"
+              data-event-ticket-cta-border-color="rgba(74,74,74,1)"
+              data-event-ticket-cta-border-width="0px"
+              data-event-ticket-cta-border-radius="4px"
+              
+              data-sold-out-button-text-color="rgba(255,255,255,1)"
+              data-sold-out-button-background-color="rgba(74,74,74,1)"
+              data-sold-out-button-border-color="rgba(74,74,74,1)"
+              data-sold-out-button-clickable="true"
+              
+              data-event-rsvp-position="left"
+              data-event-rsvp-cta-size="medium"
+              data-event-rsvp-only-show-icon="false"
+              data-event-rsvp-text="RSVP"
+              data-event-rsvp-icon="false"
+              data-event-rsvp-cta-text-color="rgba(74,74,74,1)"
+              data-event-rsvp-cta-bg-color="rgba(255,255,255,1)"
+              data-event-rsvp-cta-border-color="rgba(74,74,74,1)"
+              data-event-rsvp-cta-border-width="1px"
+              data-event-rsvp-cta-border-radius="4px"
+              
+              data-follow-section-position="hidden"
+              data-follow-section-alignment="center"
+              data-follow-section-header-text="Get updates on new shows, new music, and more"
+              data-follow-section-cta-size="medium"
+              data-follow-section-cta-text="FOLLOW"
+              data-follow-section-cta-icon="false"
+              data-follow-section-cta-text-color="rgba(255,255,255,1)"
+              data-follow-section-cta-bg-color="rgba(74,74,74,1)"
+              data-follow-section-cta-border-color="rgba(74,74,74,1)"
+              data-follow-section-cta-border-width="0px"
+              data-follow-section-cta-border-radius="4px"
+              
+              data-play-my-city-position="bottom"
+              data-play-my-city-alignment="center"
+              data-play-my-city-header-text="Don’t see a show near you?"
+              data-play-my-city-cta-size="medium"
+              data-play-my-city-cta-text="REQUEST A SHOW"
+              data-play-my-city-cta-icon="false"
+              data-play-my-city-cta-text-color="rgba(255,255,255,1)"
+              data-play-my-city-cta-bg-color="rgba(74,74,74,1)"
+              data-play-my-city-cta-border-color="rgba(74,74,74,1)"
+              data-play-my-city-cta-border-width="0px"
+              data-play-my-city-cta-border-radius="2px"
+              
+              data-optin-font=""
+              data-optin-text-color=""
+              data-optin-bg-color=""
+              data-optin-cta-text-color=""
+              data-optin-cta-bg-color=""
+              data-optin-cta-border-width=""
+              data-optin-cta-border-radius=""
+              data-optin-cta-border-color=""
+              
+              data-language="en"
+              data-layout-breakpoint="900"
+              data-app-id=""
+              data-affil-code=""
+              data-bit-logo-position="hidden"
+              data-bit-logo-color="rgba(255,255,255,1)"
+              
+            ></a>
+          </div>
+        </section>
+        
+        <!-- Merch Section -->
+        <section class="merch scroll-section fade-left">
+          <div class="content">
+            <a href="https://whenyousleep.printful.me/" target="_blank" id="merchlink">MERCH STORE LIVE NOW</a>
           </div>
         </section>
 
-        <!-- Merch Section -->
-        <section class="merch scroll-section fade-up">
-          <div class="content">
-            <h2>Merchandise</h2>
-            <p>[Product listings or store link here]</p>
-          </div>
+        <!-- Video BG Inverted -->
+        <section class="hero2">
+          <video autoplay loop muted playsinline class="motion-bg">
+            <source src="assets/eye30.mp4" type="video/mp4" />
+          </video>
+          <div class="overlay-gradient2"></div>
         </section>
 
         <!-- Footer Info -->
-        <div class="site-footer">
+        <div class="site-footer fade-bottom">
           <p>&copy; 2025 When You Sleep. All rights reserved.</p>
           <div class="social-links">
-            <a href="#" aria-label="Instagram">📸</a>
-            <a href="#" aria-label="Twitter">🐦</a>
-            <a href="#" aria-label="Bandcamp">🎵</a>
+            <a href="#" aria-label="Instagram">Instagram</a>
+            <a href="#" aria-label="Twitter">Twitter</a>
+            <a href="#" aria-label="Bandcamp">Bandcamp</a>
           </div>
         </div>
-      </body>      
-</html>
+      </body>
+      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0YMfuxvUlRjNtujLeOu9Ji?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></html>
