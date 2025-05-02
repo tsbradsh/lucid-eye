@@ -316,7 +316,7 @@ body, html {
 /* Footer */
 .site-footer {
   background-color: black;
-  padding-bottom: 7.5%;
+  padding-bottom: 152px;
   color: #ccc;
   text-align: center;
   filter: drop-shadow(-5px 5px 4px black);
